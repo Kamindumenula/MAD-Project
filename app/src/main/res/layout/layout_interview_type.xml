@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Interview Type"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioInterviewType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RadioButton
+                android:id="@+id/radioTechnical"
+                style="@style/RadioButtonCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Technical Interview"
+                android:padding="16dp"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp">
+
+            <RadioButton
+                android:id="@+id/radioBehavioral"
+                style="@style/RadioButtonCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Behavioral Interview"
+                android:padding="16dp"/>
+        </com.google.android.material.card.MaterialCardView>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNextType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Continue"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="@color/white"/>
+</LinearLayout>

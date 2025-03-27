@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvQuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1 of 5"
+        android:textColor="#757575"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvQuestionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What are your strengths and weaknesses?"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Type your answer here..."
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:background="@drawable/edittext_bg"/>
+
+    <Button
+        android:id="@+id/btnNextQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Next Question"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="@color/white"/>
+</LinearLayout>

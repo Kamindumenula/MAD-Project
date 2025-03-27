@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="24dp">
+
+    <!-- Logo and Title Row (Top) -->
+    <LinearLayout
+        android:id="@+id/titleContainer"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/smallLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/interview_buddy_logo" />
+
+        <TextView
+            style="@style/TextAppearance.InknutAntiqua.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="INTERVIEW BUDDY"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Onboarding Content (Center) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Onboarding Image -->
+        <ImageView
+            android:id="@+id/onboardingImage"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/onboarding3"/>
+
+
+        <TextView
+            style="@style/TextAppearance.InknutAntiqua.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Track Your Progress"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Description Text -->
+        <TextView
+            style="@style/TextAppearance.InknutAntiqua.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Monitor and boost your interview skills over time"
+            android:textColor="@color/light_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Button Container (Bottom) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:minHeight="36dp"
+            android:background="@drawable/btn_light_blue_rounded"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inknut_antiqua_medium"/>
+
+        <!-- Get Started Button (replaces Next) -->
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_light_blue_rounded"
+            android:text="Get Started"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inknut_antiqua_medium"/>
+
+    </LinearLayout>
+</RelativeLayout>
